@@ -1,38 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 0.5px;
+}
+body {
+  background-color: #e5e5e5;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
+}
+
+.top-container {
+  width: 750px;
+  height: 160px;
+  margin: 20px;
+  background-color: #ffffff;
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 5px;
+  text-align: left;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+  display: flex;
+}
+.top-container img {
+  border-radius: 50%;
+  max-width: 90px;
+}
+.top-container .content {
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.top-container .content .name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(255, 79, 79);
+  padding-bottom: 10px;
+}
+.top-container .content .street {
+  font-weight: 600;
+  color: rgb(167, 79, 255);
+}
+.top-container .country {
+  font-weight: 700;
+}
+.top-container .content .gender {
+  padding-top: 5px;
+  color: rgb(90, 88, 88);
+}
+.FlexContainer {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  overflow: auto;
+  flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+.FlexContainer .inner-container {
+  width: 350px;
+  height: 120px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  text-align: left;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+    rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.FlexContainer .inner-container:hover {
+  background-color: #eaeaea;
+}
+.FlexContainer .inner-container:focus {
+  background: #5f4747;
+}
+.FlexContainer .inner-container div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.FlexContainer .inner-container .gender-and-country {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(90, 88, 88);
+}
+.FlexContainer .inner-container .name {
+  font-weight: 600;
+  font-size: 20px;
+}
+.FlexContainer .email {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgb(255, 79, 79);
+}
+.focus {
+  border: 2px solid rgb(92, 92, 92);
+}
+
+@media only screen and (max-width: 800px) {
+  .top-container {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .top-container img {
+    max-width: 70px;
+  }
+  .top-container .content {
+    font-size: 14px;
+  }
+  .top-container .content .name {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .top-container {
+    width: 350px;
+    height: 100%;
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+  }
+  .top-container img {
+    max-width: 70px;
+  }
+  .top-container .content {
+    font-size: 14px;
+  }
+  .top-container .content .name {
+    font-size: 1rem;
   }
 }
