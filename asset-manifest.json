@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kawa-page/static/css/main.7fc79033.css",
+    "main.js": "/kawa-page/static/js/main.e122c186.js",
+    "static/js/787.49e04206.chunk.js": "/kawa-page/static/js/787.49e04206.chunk.js",
+    "index.html": "/kawa-page/index.html",
+    "main.7fc79033.css.map": "/kawa-page/static/css/main.7fc79033.css.map",
+    "main.e122c186.js.map": "/kawa-page/static/js/main.e122c186.js.map",
+    "787.49e04206.chunk.js.map": "/kawa-page/static/js/787.49e04206.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7fc79033.css",
+    "static/js/main.e122c186.js"
+  ]
+}
